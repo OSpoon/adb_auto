@@ -3,7 +3,7 @@ import sys
 import time
 
 import xmltodict
-
+from common import common
 
 def adb_click(x, y):
     command = 'shell input tap ' + str(x) + ' ' + str(y)
@@ -226,7 +226,7 @@ def while_send():
     while 1:
         adb_click(int(random.uniform(838, 1030)), int(random.uniform(1155, 1347)))
 
-
 if __name__ == '__main__':
     # add_ltb_main()
-    while_send()
+    # while_send()
+    common.activation_hei_yu(adb)
