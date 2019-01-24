@@ -4,9 +4,6 @@ import xmltodict
 from common.auto_adb import adb_tools
 
 
-
-
-
 def analysis(obj):
     if isinstance(obj, dict):
 
@@ -188,7 +185,9 @@ if __name__ == '__main__':
     # add_ltb_main()
     # while_send()
 
+    # 初始化adb_tools
     adb_tools = adb_tools()
+    # 输出设备信息
     adb_tools.print()
 
     activation_hei_yu()

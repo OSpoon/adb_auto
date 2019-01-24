@@ -13,7 +13,6 @@ class auto_adb():
 
     def __init__(self):
         try:
-            raise OSError('testError')
             adb_path = 'adb'
             subprocess.Popen([adb_path], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
             self.adb_path = adb_path
