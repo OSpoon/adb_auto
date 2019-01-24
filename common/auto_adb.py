@@ -135,3 +135,13 @@ class adb_tools():
         command = 'shell input keyevent ' + key
         print('按键：' + command)
         print(self._adb.run(command))
+
+    def adb_pull(self, from_path):
+        command = 'pull /sdcard/' + from_path
+        print('提取文件到PC：' + command)
+        print(self._adb.run(command))
+
+    def adb_push(self, from_path, to_path):
+        command = 'push ' + from_path + ' /sdcard/' + to_path
+        print('推送文件到手机：' + command)
+        print(self._adb.run(command))

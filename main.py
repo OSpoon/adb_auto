@@ -24,3 +24,9 @@ if __name__ == '__main__':
     # ltb(adb_tools).while_send()
     # ltb(adb_tools).read_news()
     # ltb(adb_tools).add_ltb_run()
+
+    # 提起文件到PC
+    # adb_tools.adb_pull('window_dump.xml')
+
+    #推送文件到手机
+    # adb_tools.adb_push('C:\\Users\\zhanxiaolin-n22\\Desktop\\adb_auto\\README.md','README.md')
